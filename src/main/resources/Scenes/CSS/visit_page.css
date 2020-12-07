@@ -1,0 +1,17 @@
+#patient_info_open_close_button {
+	text-orientation: sideways;
+}
+
+* {
+	background-color: blue;
+}
+
+.red_alert {
+	-fx-text-box-border: red ;
+  -fx-focus-color: red ;
+}
+
+.yellow_alert {
+	-fx-text-box-border: yellow ;
+  -fx-focus-color: yellow ;
+}

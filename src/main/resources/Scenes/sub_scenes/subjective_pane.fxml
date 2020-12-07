@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="1069.0" text="Subjective" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane prefHeight="476.0" prefWidth="1120.0">
+         <children>
+            <HBox prefHeight="561.0" prefWidth="1100.0">
+               <children>
+                  <ScrollPane prefHeight="561.0" prefWidth="304.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="558.0" prefWidth="268.0">
+                           <children>
+                              <VBox prefHeight="553.0" prefWidth="272.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <TextArea prefHeight="561.0" prefWidth="856.0" promptText="Begin note here (press enter to begin next symptom explanation)" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

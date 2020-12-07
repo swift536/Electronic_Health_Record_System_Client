@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genuinedeveloper.controllers.LoginPageController">
+   <top>
+      <TextField alignment="CENTER" disable="true" prefHeight="100.0" prefWidth="600.0" text="Login" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </TextField>
+   </top>
+   <left>
+      <VBox prefHeight="300.0" prefWidth="233.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField alignment="CENTER_RIGHT" prefHeight="60.0" text="ID:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER_RIGHT" prefHeight="60.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER_RIGHT" prefHeight="60.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField id="id_textfield" fx:id="id_textfield" prefHeight="60.0" styleClass="editable_field" />
+            <TextField id="username_textfield" fx:id="username_textfield" prefHeight="60.0" styleClass="editable_field" />
+            <TextField id="password_textfield" fx:id="password_textfield" prefHeight="60.0" styleClass="editable_field" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox prefHeight="114.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="252.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="91.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="250.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="9.0" prefHeight="16.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="submit_button" fx:id="submit_button" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Submit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField id="error_textfield" fx:id="error_textfield" alignment="CENTER" disable="true" prefHeight="51.0" prefWidth="600.0" GridPane.columnSpan="3" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

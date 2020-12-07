@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="border_pane" fx:id="border_pane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genuinedeveloper.controllers.VisitPageController">
+   <bottom>
+      <HBox id="border_pane_bottom_hbox" fx:id="border_pane_bottom_hbox" prefHeight="25.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField disable="true" prefHeight="25.0" prefWidth="26.0" />
+            <Button id="alerts_button" fx:id="alerts_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Alerts" HBox.hgrow="ALWAYS" />
+            <Button id="mail_button" fx:id="mail_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Mail" HBox.hgrow="ALWAYS" />
+            <Button id="my_account_button" fx:id="my_account_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="My Account" HBox.hgrow="ALWAYS" />
+            <Button id="report_problem_button" fx:id="report_problem_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Report Problem" HBox.hgrow="ALWAYS" />
+            <TextField disable="true" prefHeight="25.0" prefWidth="357.0" HBox.hgrow="ALWAYS" />
+            <Button id="post_record_button" fx:id="post_record_button" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Post Record" />
+         </children></HBox>
+   </bottom>
+   <top>
+      <HBox id="border_pane_top_hbox" fx:id="border_pane_top_hbox" prefHeight="16.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton id="records_menu_button" fx:id="records_menu_button" mnemonicParsing="false" text="Records" HBox.hgrow="ALWAYS">
+              <items>
+                <MenuItem id="current_visit_menu_buton" fx:id="current_visit_menu_buton" mnemonicParsing="false" text="Current Visit" />
+                <MenuItem id="past_records_menu_button" fx:id="past_records_menu_button" mnemonicParsing="false" text="Past Records" />
+              </items>
+            </MenuButton>
+            <MenuButton id="medications_menu_button" fx:id="medications_menu_button" mnemonicParsing="false" text="Medications" HBox.hgrow="ALWAYS">
+              <items>
+                <MenuItem id="current_medications_menu_button" fx:id="current_medications_menu_button" mnemonicParsing="false" text="Current Medications" />
+                <MenuItem id="past_medications_menu_button" fx:id="past_medications_menu_button" mnemonicParsing="false" text="Past Medications" />
+              </items>
+            </MenuButton>
+            <MenuButton id="conditions_menu_button" fx:id="conditions_menu_button" mnemonicParsing="false" text="Conditions" HBox.hgrow="ALWAYS">
+              <items>
+                <MenuItem id="current_conditions_menu_button" fx:id="current_conditions_menu_button" mnemonicParsing="false" text="Current Conditions" />
+                <MenuItem id="past_conditions_menu_button" fx:id="past_conditions_menu_button" mnemonicParsing="false" text="Past Conditions" />
+              </items>
+            </MenuButton>
+            <Button id="allergies_menu_button" fx:id="allergies_menu_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Allergies" HBox.hgrow="ALWAYS" />
+            <Button id="surgeries_menu_button" fx:id="surgeries_menu_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Surgeries" HBox.hgrow="ALWAYS" />
+            <TextField id="date_time_textfield" fx:id="date_time_textfield" alignment="CENTER_RIGHT" disable="true" prefHeight="24.0" prefWidth="463.0" text="Date and Time" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <HBox id="border_pane_left_hbox" fx:id="border_pane_left_hbox" prefHeight="550.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox id="patient_info_vbox" fx:id="patient_info_vbox" prefHeight="550.0" prefWidth="158.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView id="patient_photo_image" fx:id="patient_photo_image" fitHeight="128.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@Scenes/Images/no_patient_image.png" />
+                     </image></ImageView>
+                  <TextField id="first_name_textfield" fx:id="first_name_textfield" alignment="CENTER" disable="true" text="first name" VBox.vgrow="ALWAYS" />
+                  <TextField id="last_name_textfield" fx:id="last_name_textfield" alignment="CENTER" disable="true" text="last name" VBox.vgrow="ALWAYS" />
+                  <TextField id="gender_textfield" fx:id="gender_textfield" alignment="CENTER" disable="true" text="gender" VBox.vgrow="ALWAYS" />
+                  <TextField id="age_textfield" fx:id="age_textfield" alignment="CENTER" disable="true" text="age" VBox.vgrow="ALWAYS" />
+                  <TextField id="dob_textfield" fx:id="dob_textfield" alignment="CENTER" disable="true" text="dob" VBox.vgrow="ALWAYS" />
+                  <TextField id="allergies_textfield" fx:id="allergies_textfield" alignment="CENTER" disable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="131.0" prefWidth="134.0" text="allergies" VBox.vgrow="ALWAYS" />
+                  <TextField id="conditions_textfield" fx:id="conditions_textfield" alignment="CENTER" disable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="158.0" prefWidth="134.0" text="conditions" VBox.vgrow="ALWAYS" />
+                  <Button id="update_patient_button" fx:id="update_patient_button" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="136.0" text="update patient" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <Button id="patient_info_open_close_button" fx:id="patient_info_open_close_button" contentDisplay="RIGHT" ellipsisString="" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="550.0" prefWidth="32.0" text="close" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox id="center_vbox" fx:id="center_vbox" BorderPane.alignment="CENTER">
+         <children>
+            <TextField id="section_title_textfield" fx:id="section_title_textfield" alignment="CENTER" disable="true" text="Title">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </TextField>
+            <ScrollPane id="center_scrollpane" fx:id="center_scrollpane">
+               <content>
+                  <Accordion id="center_accordion" fx:id="center_accordion" prefHeight="549.0" prefWidth="717.0">
+                    <panes>
+                      <TitledPane id="subjective_note" fx:id="subjective_note" animated="false" prefHeight="424.0" prefWidth="464.0" text="Subjective">
+                        <content>
+                          <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                      <TitledPane id="objective_note" fx:id="objective_note" animated="false" text="Objective">
+                        <content>
+                          <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                      <TitledPane id="assessment_note" fx:id="assessment_note" animated="false" text="Assessment">
+                        <content>
+                          <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                        <TitledPane id="plan_note" fx:id="plan_note" animated="false" text="Plan">
+                           <content>
+                              <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="550.0" prefWidth="33.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
