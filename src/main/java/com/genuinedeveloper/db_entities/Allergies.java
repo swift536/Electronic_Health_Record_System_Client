@@ -2,7 +2,9 @@ package com.genuinedeveloper.db_entities;
 
 public class Allergies extends Entity{
 
-	private Integer id;
+	private Integer allergies_id;
+	
+	private Integer patients_id;
 	
 	private String name;
 	
@@ -17,11 +19,11 @@ public class Allergies extends Entity{
 	}
 
 	public Integer getId() {
-		return id;
+		return patients_id;
 	}
 
 	public void setId(Integer id) {
-		this.id = id;
+		this.patients_id = id;
 	}
 
 	public String getName() {
@@ -49,7 +51,7 @@ public class Allergies extends Entity{
 	}
 	
 	public String toString() {
-		return id.toString() + " " + name + " " + threat_level.toString() + " " + description;
+		return patients_id.toString() + " " + name + " " + threat_level.toString() + " " + description;
 	}
 	
 }

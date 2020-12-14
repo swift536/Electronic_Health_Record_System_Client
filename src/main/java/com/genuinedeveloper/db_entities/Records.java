@@ -3,14 +3,11 @@ package com.genuinedeveloper.db_entities;
 import java.sql.Date;
 import java.sql.Time;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.genuinedeveloper.db_entities.db_sub_entitities.SOAPNote;
 
 public class Records extends Entity{
 	
-	private Integer record_id;
+	private Integer records_id;
 	
 	private Integer id;
 	
@@ -21,11 +18,11 @@ public class Records extends Entity{
 	private SOAPNote soap_note;
 
 	public Integer getRecordId() {
-		return record_id;
+		return records_id;
 	}
 	
 	public void setRecordId(Integer recordId) {
-		this.record_id = recordId;
+		this.records_id = recordId;
 	}
 	
 	public Integer getId() {

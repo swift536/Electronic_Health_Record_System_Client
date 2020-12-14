@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="border_pane" fx:id="border_pane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genuinedeveloper.controllers.VisitPageController">
+<BorderPane id="border_pane" fx:id="border_pane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genuinedeveloper.restfulclient.controllers.VisitPageController">
    <bottom>
       <HBox id="border_pane_bottom_hbox" fx:id="border_pane_bottom_hbox" prefHeight="25.0" prefWidth="900.0" BorderPane.alignment="CENTER">
          <children>
@@ -27,7 +27,7 @@
    <top>
       <HBox id="border_pane_top_hbox" fx:id="border_pane_top_hbox" prefHeight="16.0" prefWidth="900.0" BorderPane.alignment="CENTER">
          <children>
-            <MenuButton id="records_menu_button" fx:id="records_menu_button" mnemonicParsing="false" text="Records" HBox.hgrow="ALWAYS">
+            <MenuButton id="records_menu_button" fx:id="records_menu_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Records" HBox.hgrow="ALWAYS">
               <items>
                 <MenuItem id="current_visit_menu_buton" fx:id="current_visit_menu_buton" mnemonicParsing="false" text="Current Visit" />
                 <MenuItem id="past_records_menu_button" fx:id="past_records_menu_button" mnemonicParsing="false" text="Past Records" />
@@ -39,7 +39,10 @@
                 <MenuItem id="past_medications_menu_button" fx:id="past_medications_menu_button" mnemonicParsing="false" text="Past Medications" />
               </items>
             </MenuButton>
-            <TextField id="date_time_textfield" fx:id="date_time_textfield" alignment="CENTER_RIGHT" disable="true" prefHeight="24.0" prefWidth="463.0" text="Date and Time" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Conditions" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Allergies" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Surgeries" />
+            <TextField id="date_time_textfield" fx:id="date_time_textfield" alignment="CENTER_RIGHT" disable="true" prefHeight="25.0" prefWidth="439.0" text="Date and Time" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
    </top>
@@ -50,7 +53,7 @@
                <children>
                   <ImageView id="patient_photo_image" fx:id="patient_photo_image" fitHeight="128.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
                      <image>
-                        <Image url="@Scenes/Images/no_patient_image.png" />
+                        <Image url="@../../../../../../Capstone%20Project/Spring/restful-client/src/main/resources/Scenes/Scenes/Images/no_patient_image.png" />
                      </image></ImageView>
                   <TextField id="first_name_textfield" fx:id="first_name_textfield" alignment="CENTER" editable="false" text="first name" VBox.vgrow="ALWAYS" />
                   <TextField id="last_name_textfield" fx:id="last_name_textfield" alignment="CENTER" editable="false" text="last name" VBox.vgrow="ALWAYS" />

@@ -4,7 +4,9 @@ import java.sql.Date;
 
 public class Medications extends Entity{
 	
-	private Integer id;
+	private Integer medications_id;
+	
+	private Integer patients_id;
 	
 	private String name;
 	
@@ -45,11 +47,11 @@ public class Medications extends Entity{
 	}
 
 	public Integer getId() {
-		return id;
+		return patients_id;
 	}
 
 	public void setId(Integer id) {
-		this.id = id;
+		this.patients_id = id;
 	}
 
 	public String getName() {

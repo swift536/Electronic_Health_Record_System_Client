@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="border_pane" fx:id="border_pane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genuinedeveloper.controllers.VisitPageController">
+<BorderPane id="border_pane" fx:id="border_pane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genuinedeveloper.restfulclient.controllers.VisitPageController">
    <bottom>
       <HBox id="border_pane_bottom_hbox" fx:id="border_pane_bottom_hbox" prefHeight="25.0" prefWidth="900.0" BorderPane.alignment="CENTER">
          <children>

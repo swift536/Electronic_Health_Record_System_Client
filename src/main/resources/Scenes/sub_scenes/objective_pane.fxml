@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -56,7 +57,7 @@
                         <VBox prefHeight="571.0" prefWidth="262.0" />
                      </content>
                   </ScrollPane>
-                  <TextField alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="577.0" prefWidth="591.0" promptText="Begin notes here if necessary..." />
+                  <TextArea prefHeight="577.0" prefWidth="571.0" promptText="Begin notes here if necessary..." />
                </children>
             </HBox>
          </children>

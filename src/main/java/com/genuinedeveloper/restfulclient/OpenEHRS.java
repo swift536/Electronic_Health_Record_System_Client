@@ -1,20 +1,16 @@
 package com.genuinedeveloper.restfulclient;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.ApplicationContextInitializer;
-import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.GenericApplicationContext;
-import org.springframework.web.client.RestTemplate;
-import com.genuinedeveloper.controllers.LoginPageController;
-import com.genuinedeveloper.controllers.VisitPageController;
+
+import com.genuinedeveloper.restfulclient.controllers.LoginPageController;
+import com.genuinedeveloper.restfulclient.controllers.VisitPageController;
+import com.genuinedeveloper.restfulclient.controllers.sub_controllers.MedicationPageController;
+import com.genuinedeveloper.restfulclient.controllers.sub_controllers.RecordsPageController;
+import com.genuinedeveloper.restfulclient.controllers.sub_controllers.UpdatePatientController;
 import com.genuinedeveloper.utilities.UserCredentials;
 
 import javafx.application.Application;
@@ -38,9 +34,11 @@ public class OpenEHRS extends Application {
 				applicationContext.registerBean(HostServices.class, () -> getHostServices());
 				applicationContext.registerBean(RESTConfig.class);
 				applicationContext.registerBean(UserCredentials.class);
-				//applicationContext.registerBean(EmptyPageController.class);
 				applicationContext.registerBean(LoginPageController.class);
 				applicationContext.registerBean(VisitPageController.class);
+				applicationContext.registerBean(RecordsPageController.class);
+				applicationContext.registerBean(MedicationPageController.class);
+				applicationContext.registerBean(UpdatePatientController.class);
 			}
 			
 		};

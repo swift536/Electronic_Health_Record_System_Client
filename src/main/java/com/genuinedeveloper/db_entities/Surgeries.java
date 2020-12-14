@@ -1,10 +1,10 @@
 package com.genuinedeveloper.db_entities;
 
-public class Surgeries {
+public class Surgeries extends Entity{
 
 	private Integer surgeries_id;
 	
-	private Integer id;
+	private Integer patients_id;
 	
 	private String name;
 	
@@ -19,11 +19,11 @@ public class Surgeries {
 	}
 
 	public Integer getId() {
-		return id;
+		return patients_id;
 	}
 
 	public void setId(Integer id) {
-		this.id = id;
+		this.patients_id = id;
 	}
 
 	public String getName() {
